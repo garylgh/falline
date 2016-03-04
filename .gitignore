@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.idea
+*.bak
+*.tmp
+Thumbs.db
+/.svn
+/tmp
+.tmp
+/lib/
+/node_modules/

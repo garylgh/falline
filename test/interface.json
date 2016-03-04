@@ -1,0 +1,11 @@
+{
+	"title": "测试接口集合定义",
+	"version": "1.0.0",
+	"interfaces": [{
+		"name": "主搜索接口",
+		"id": "Search.getItems",
+		"protocol": "http",
+		"method": "get",
+		"url": "http://10.1.193.67:3000/api/messages"
+	}]
+}

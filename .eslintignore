@@ -1,0 +1,6 @@
+.dist/*
+.tmp/*
+clint/*
+docs/*
+node_modules/*
+test/*
