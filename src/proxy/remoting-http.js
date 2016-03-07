@@ -11,17 +11,18 @@
 // }
 
 'use strict';
-import FallineProxy from './falline-proxy';
+import BaseRemoting from './remoting';
 import request from 'request';
 const Promise = require('bluebird');
 
-export default class RemotingHttp extends FallineProxy {
+export default class RemotingHttp extends BaseRemoting {
 	constructor(interfaceDesc) {
 		super();
 		this.meta = interfaceDesc;
 	}
 	invoke(params) {
 		var url = this.meta.url;
+		// TODO 根据不同的restful method调用request不同的方法。目前只实现get方法
 		var method = this.meta.method;
 		return new Promise(function(resolve, reject) {
 			request(url, function(error, response, body) {
