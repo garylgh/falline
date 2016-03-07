@@ -10,4 +10,6 @@ var haha = new Falline({
 });
 console.log(haha.getItems({a: '123'}).then(function(data) {
 	console.log(data);
+}).catch(function(){
+	console.log('接口调用失败');
 }));
